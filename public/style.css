@@ -1,0 +1,209 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffde00;
+    color: #999;
+}
+
+header {
+    background-color: #ffde00;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header .header-image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color: #000;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.section-header {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-left {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.section-header-blk {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section-card-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.section-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #999;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.header-card, .service-card, .story-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.header-card {
+    height: 380px;
+}
+
+.service-card {
+    width: 280px;
+}
+
+.story-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffde00;
+    border: 1px solid #fff;
+    width: 460px;
+    margin: 15px auto;
+}
+
+.partner-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+    margin: 15px auto;
+}
+
+/* Profile Photo Styling */
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Job Title Below the Photo */
+.job-title {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Testimonial / Description */
+.testimonial {
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Hover Effect */
+.story-card:hover, .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+    .story-card {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .photo-container {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .testimonial {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .section-header {
+        font-size: 1.6em;
+    }
+
+    .service-card {
+        width: 90%;
+        margin: 15px 0;
+    }
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
